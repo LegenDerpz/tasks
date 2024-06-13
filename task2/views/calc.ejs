@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <form action="/calc" method = "POST">
+        <input type = "number" name = "x" value="<%= locals.x %>"/><br>
+        <input type = "number" name = "y" value="<%= locals.y %>"/><br>
+        <button type = "submit">Submit</button><br>
+    </form>
+    The result is <%= locals.result  || 'undefined' %>
+</body>
+</html>
